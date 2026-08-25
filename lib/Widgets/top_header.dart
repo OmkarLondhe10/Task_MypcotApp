@@ -70,12 +70,12 @@ class TopHeader extends StatelessWidget {
                 ),
               ],
             ),
-            child: ClipOval(
-              child: Image.network(
-                'https://i.pravatar.cc/100?img=47',
-                fit: BoxFit.cover,
-              ),
-            ),
+            // child: ClipOval(
+            //   child: Image.network(
+            //     'https://i.pravatar.cc/100?img=47',
+            //     fit: BoxFit.cover,
+            //   ),
+            // ),
           ),
         ],
       ),

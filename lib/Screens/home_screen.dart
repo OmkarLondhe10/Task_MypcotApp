@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:flutter_task_omkar/Widgets/dashboard_carousel.dart';
 import '../data/dashboard_data.dart';
 import '../widgets/top_header.dart';
 import '../widgets/welcome_section.dart';
@@ -48,9 +49,6 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final dashboardItem =
-        DashboardData.items[selectedDashboard];
-
     return Scaffold(
       backgroundColor: Colors.white,
 
@@ -61,15 +59,9 @@ class _HomeScreenState extends State<HomeScreen> {
 
             const WelcomeSection(),
 
-            Padding(
-              padding: const EdgeInsets.fromLTRB(20, 28, 20, 0),
-              child: AnimatedSwitcher(
-                duration: const Duration(milliseconds: 500),
-                child: DashboardCard(
-                  key: ValueKey(selectedDashboard),
-                  item: dashboardItem,
-                ),
-              ),
+            const Padding(
+              padding: EdgeInsets.only(top: 28),
+              child: DashboardCarousel(),
             ),
 
             const TimelineHeader(),
