@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_task_omkar/Constants/app_colors.dart';
 
 class FloatingAddButton extends StatelessWidget {
   const FloatingAddButton({super.key});
@@ -10,7 +11,7 @@ class FloatingAddButton extends StatelessWidget {
       height: 58,
       decoration: BoxDecoration(
         shape: BoxShape.circle,
-        color: const Color(0xFF293F70),
+        color: AppColors.primaryText,
         boxShadow: [
           BoxShadow(
             color: Colors.black.withOpacity(0.25),

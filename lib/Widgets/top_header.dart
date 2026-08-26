@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_task_omkar/Constants/app_colors.dart';
 
 class TopHeader extends StatelessWidget {
   const TopHeader({super.key});
@@ -70,12 +71,6 @@ class TopHeader extends StatelessWidget {
                 ),
               ],
             ),
-            // child: ClipOval(
-            //   child: Image.network(
-            //     'https://i.pravatar.cc/100?img=47',
-            //     fit: BoxFit.cover,
-            //   ),
-            // ),
           ),
         ],
       ),
@@ -105,7 +100,7 @@ class TopHeader extends StatelessWidget {
         icon: Icon(
           icon,
           size: 20,
-          color: const Color(0xFF304570),
+          color: AppColors.primaryText
         ),
       ),
     );

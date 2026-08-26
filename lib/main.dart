@@ -14,6 +14,7 @@ class MypcotApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Mypcot',
       theme: ThemeData(
+        fontFamily: 'Roboto',
         scaffoldBackgroundColor: Colors.white,
         useMaterial3: true,
       ),

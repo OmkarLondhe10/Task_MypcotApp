@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import '../constants/app_colors.dart';
 import '../models/dashboard_item.dart';
 
 class DashboardData {
@@ -6,8 +6,8 @@ class DashboardData {
     DashboardItem(
       title: 'Orders',
       image: 'assets/icons/orders-illustration-image.svg',
-      backgroundColor: Color(0xFF35A6CE),
-      buttonColor: Color(0xFFE66337),
+      backgroundColor: AppColors.orders,
+      buttonColor: AppColors.orange,
       firstMessage: 'You have 3 active\norders from',
       secondMessage: '02 Pending\nOrders from',
     ),
@@ -15,8 +15,8 @@ class DashboardData {
     DashboardItem(
       title: 'Subscriptions',
       image: 'assets/icons/subscriptions-illustration-image.svg',
-      backgroundColor: Color(0xFFE5B91A),
-      buttonColor: Color(0xFF2C50D8),
+      backgroundColor: AppColors.subscriptions,
+      buttonColor: AppColors.blue,
       firstMessage: '03 deliveries',
       secondMessage: '10 Active\nSubscriptions',
     ),
@@ -24,8 +24,8 @@ class DashboardData {
     DashboardItem(
       title: 'Customers',
       image: 'assets/icons/customers-illustration-image.svg',
-      backgroundColor: Color(0xFF2EC99A),
-      buttonColor: Color(0xFFD72F72),
+      backgroundColor: AppColors.customers,
+      buttonColor: AppColors.pink,
       firstMessage: '15 New customers',
       secondMessage: '1.8% ↑\nCustomers',
     ),
